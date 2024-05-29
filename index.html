@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/cards.css">
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+
+<body>
+    <header>
+        <div class="encabezado">
+            <img class="img-corazones" width="138px" height="56px" src="img/corazones.png"
+                alt="3 corazones en estilo pixelart">
+            <h1 class="titulo">Alura Geek</h1>
+        </div>
+    </header>
+    <main class="container">
+        <section class="container-left">
+            <h1>MIS PRODUCTOS:</h1>
+            <div class="cards-elements" id="cards" data-cards></div>
+        </section>
+        <section class="container-right">
+            <h1>AGREGAR PRODUCTO:</h1>
+            <div class="form-elements">
+                <form class="container-formulario" data-formulario>
+                    <div class="form-inputs">
+                        <input type="text" id="producto" name="producto" placeholder="nombre..." data-producto
+                            minlength="4" required maxlength="35">
+                        <input type="text" id="precio" name="precio" placeholder="precio..." data-precio minlength="4"
+                            required>
+                        <input type="text" id="imagen" name="imagen" placeholder="imagen..." data-imagen minlength="4"
+                            required>
+                    </div>
+                    <div class="form-btn-elements">
+                        <button class="btn-guardar" type="submit">Guardar</button>
+                        <button class="btn-limpiar" type="reset">Limpiar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-rodape">
+            <div class="rodape">
+                <img width="138px" height="56px" src="img/corazones.png" alt="3 corazones en estilo pixelart">
+                <h1 class="titulo-header">Alura Geek</h1>
+            </div>
+            <div class="rodape-p2">
+                <h3>Hecho por Miguel Angel S. Burgos</h3>
+                <p>Alura LATAM - 2024</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/script.js" type="module"></script>
+    <script src="/js/mostrarCards.js" type="module"></script>
+    <script src="/js/crearCards.js" type="module"></script>
+    <script src="/js/eliminarCards.js" type="module"></script>
+</body>
+
+</html>
